@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Encode+Sans+SC:wght@300&family=Jost:wght@300&family=Mukta:wght@300&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Rajdhani', sans-serif;
+    color: rgb(3, 255, 3);
+}
+
+.bodyIndex header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+}
+
+/* INICIO */
+
+/* HEADER */
+
+.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-image: url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/ropa/valen13.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(25%);
+    z-index: -1;
+}
+    .sectionHeader {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: 1000px;
+        width: 100%;
+    }
+
+    .tituloInicio {
+        text-align: center;
+        text-decoration: underline;
+        color: #359d15;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .links {
+        color: #359d15;
+        font-size: 200%;
+        font-weight: normal;
+        text-decoration: none;
+        margin-left: 50px;
+        margin-right: 50px;
+        transition: 0.5s;
+    }
+
+    h3 {
+        font-size: 25;
+        text-decoration: underline;
+    }
+
+    .parrafoinicio {
+        text-align: center;
+        font-size: 20px;
+        border: 5px solid #3bfe00;
+    }
+
+
+
+    /* MAIN */
+
+    .titulolista {
+        text-align: left;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    .produIni {
+        display: inline-block;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .imagen1 {
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+    }
+
+    .tituloProd {
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    .fotorep {
+        height: 450px;
+        width: auto;
+    }
+
+    .pc {
+        height: 500px;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes {
+        font-size: 15px;
+        background-color: #3bfe00;
+    }
+
+    /* PESTAÑA DE CONTACTO */
+
+    .tituloCon {
+        background-color: #3bfe00;
+        color: black;
+        text-align: left;
+        margin: 10px;
+    }
+
+    .enlacesCon {
+        background-color: #3bfe00;
+        color: black;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .contacto {
+        background-color: #3bfe00;
+    }
+
+    .tituloMap {
+        font-size: 30px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .mapa {
+        text-align: center;
+    }
+
+    .telefono {
+        text-align: center;
+    }
+
+    .consultas {
+        text-decoration: underline;
+        font-size: 25px;
+    }
+
+    .textarea {
+        min-width: 490px;
+        max-width: 490px;
+        min-height: 250px;
+    }
+
+    /*  PESTAÑA SERVICIOS */
+
+    .tituloSer {
+        text-align: left;
+        background-color: #3bfe00;
+        color: black;
+        margin: 10px;
+    }
+
+    .enlacesSer {
+        background-color: #3bfe00;
+        color: black;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .servicios {
+        background-color: #3bfe00;
+    }
+
+    .titulopc {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .imagenPc {
+        height: 600px;
+        width: 850px;
+    }
+
+    .arreglandopc {
+        width: auto;
+        text-align: center;
+    }
+
+    .titulocel {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .arreglandoCel {
+        height: 600px;
+        width: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .garan {
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+
+    /* PESTAÑA PRODUCTOS */
+
+    .tituloProd2 {
+        background-color: #3bfe00;
+        text-align: left;
+        color: black;
+        margin: 10px;
+    }
+
+    .enlacesProd {
+        background-color: #3bfe00;
+        color: black;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .productos {
+        background-color: #3bfe00;
+    }
+
+    .tituloProd3 {
+        color: #3bfe00;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+    .tecladoProd {
+        height: 500px;
+        width: auto;
+        text-align: center;
+    }
+
+    .ramProd {
+        height: 450px;
+        width: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .gabineteProd {
+        height: 500px;
+        width: auto;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .motherProd {
+        height: 550px;
+        width: auto;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    /* PESTAÑA NOSOTROS */
+
+    .tituloNos {
+        background-color: #3bfe00;
+        text-align: left;
+        color: black;
+        margin: 10px;
+    }
+
+    .enlacesNos {
+        background-color: #3bfe00;
+        color: black;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    .nosotros {
+        background-color: #3bfe00;
+    }
+
+    .fondoNos {
+        height: 1200px;
+        width: 1600px;
+    }
