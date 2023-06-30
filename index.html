@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/df8058881c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="multimedia/pngtree-computer-mouse-icon-symbol-black-color-png-image_1038426.jpg"
         type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+
     <title>TecnhoHouse</title>
 </head>
 
 <body class="bodyIndex">
     <header>
-        <div class="backgroundImage"></div>
+        <div class="backgroundImage img-fluid"></div>
         <section class="sectionHeader">
-            <nav >
+            <nav>
                 <h1 class="tituloInicio">TecnhoHouse</h1>
                 <a class="links" href="./index.html">Inicio</a>
                 <a class="links" href="./pages/productos.html">Productos</a>
@@ -28,60 +30,138 @@
         </section>
     </header>
     <main>
-        <div>
-            <div class="produIni">
-                <img src="./multimedia/productos/gabinete.png" alt="" class="imagen1">
-                <h5 class="tituloProd">Gabinete Gamer</h5>
-                <p>Precio: $$$</p>
-            </div>
-            <div class="produIni">
-                <img src="./multimedia/productos/teclado.jpeg" alt="" class="imagen1">
-                <h5 class="tituloProd">Teclado Mecanico Gamer</h5>
-                <p>Precio: $$$</p>
-            </div>
-            <div class="produIni">
-                <img src="./multimedia/productos/ram.jpg" alt="" class="imagen1">
-                <h5 class="tituloProd">Ram 8gb ddr4</h5>
-                <p>Precio: $$$</p>
-            </div>
-            <div class="produIni">
-                <img src="./multimedia/productos/motherboard.jpg" alt="" class="imagen1">
-                <h5 class="tituloProd">Motherboard</h5>
-                <p>Precio: $$$</p>
-            </div>
 
+        <h3 class="tituloCarru">Lo nuevo en tecnologia</h3>
+        <!-- INICIO DE CARRUSEL -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
 
-            <h3 class="titulolista">¿Que ofrecemos?</h3>
-            <ul type="square">
-                <li>Productos gamers</li>
-                <li>Perifericos para tu pc</li>
-                <li>Servicio técnico de Computadoras</li>
-                <li>Servicio técnico de Celulares</li>
-                <li>Videojuegos</li>
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+                <li data-target="#demo" data-slide-to="7"></li>
+                <li data-target="#demo" data-slide-to="8"></li>
             </ul>
-            <img src="./multimedia/christian-wiediger-WkfDrhxDMC8-unsplash.jpg" alt="" height="400px" width="800px">
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/gabinete.png" alt="Gabinete Gamer" width="500px"
+                            height="450px">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/teclado.jpeg" alt="Teclado Gamer" width="700px" height="450px">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/ram.jpg" alt="Ram 8gb ddr4" width="500px" height="450px">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/cooler.png" alt="Cooler RGB" width="450px" height="300px">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/motherboard.jpg" alt="Motherboard" width="450px"
+                            height="450px">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html"></a>
+                    <img src="./multimedia/productos/placa de video.jpg" alt="Placa de video RTX4080" width="600"
+                        height="400">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/procesador.jpg" alt="Procesador 5500g" width="500px"
+                            height="350">
+                    </a>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="./pages/productos.html">
+                        <img src="./multimedia/productos/webcam.png" alt="Webcam full Hd" width="500px" height="350">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+        <!-- FIN DE CARRUSEL -->
+        <div class="ofrecemos">
+            <div class="imgofre">
+                <img class="img-fluid" src="./multimedia/christian-wiediger-WkfDrhxDMC8-unsplash.jpg" alt="Chania"
+                    height="450px" width="700px">
+            </div>
+            <div class="lista">
+                <h3 class="tituloLista">¿Que ofrecemos?</h3>
+                <ul type="square">
+                    <li>Productos gamers</li>
+                    <li>Perifericos para tu pc</li>
+                    <li>Servicio técnico de Computadoras</li>
+                    <li>Servicio técnico de Celulares</li>
+                    <li>Videojuegos</li>
+                </ul>
+            </div>
+        </div>
         </div>
 
-        <div>
-            <h3>¡Conoce a nuestro increible servicio tecnico!</h3>
-            <p>Conoce a nuestro increible servicio tecnico formado por profesionales los cuales estan totalmente
-                capacitados
-                para resolver cualquier incoveniente que tengas con tu computadora,notebook o celular.</p>
-            <img src="multimedia/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" alt="" class="fotorep">
-            <h3>Catalogo de productos</h3>
-            <p>Puede ver nuestro gran catalogo de productos dinde te ofrecemos una gran variedad desde perifericos para
-                la
-                pc hasta todo los que necesites en hardware</p>
-            <img src="./multimedia/christian-wiediger-kf_korybd1g-unsplash.jpg" alt="" class="pc">
+
+        <h3>¡Conoce a nuestro increible servicio tecnico!</h3>
+        <p>Conoce a nuestro increible servicio tecnico formado por profesionales los cuales estan totalmente
+            capacitados para resolver cualquier incoveniente que tengas con tu computadora,notebook o celular.</p>
+        <div class="imgRep">
+            <a href="./pages/servicios.html" class="btn btn-success">Servicio Tecnico</a>
         </div>
+        <h3>Catalogo de productos</h3>
+        <p>Puede ver nuestro gran catalogo de productos dinde te ofrecemos una gran variedad desde perifericos para la
+            pc hasta todo los que necesites en hardware</p>
+        <div class="imgProd">
+            <a href="./pages/productos.html" class="btn btn-success">Servicio Tecnico</a>
+        </div>
+
     </main>
     <footer>
-        <h4>Copyright Todos los derechos resrvados</h4>
-        <p>seguinos en nuestras redes sociales</p>
-        <a href="https://www.twitch.tv/fedowskrr" class="redes">twitch</a>
-        <a href="https://www.instagram.com/fedebaraibar_/?next=%2F" class="redes">instagram</a>
+        <div class="footer">
+            <h3 class="copyfooter">Todos los derecehos reservados</h3>
+            <i class="fa-regular fa-copyright" style="color: #66ff00;"></i>
+        </div>
 
-        <a href="https://twitter.com/fedebaraibarr" class="redes">Twitter</a>
+        <div class="redes">
+
+            <a class="redes" href="https://www.instagram.com/fedebaraibar_/?next=%2F" target="_blank"><i
+                    class="fa-brands fa-instagram" style="color: #51ff00;"></i></a>
+            <a class="redes" href="https://twitter.com/fedebaraibarr" target="_blank"><i class="fa-brands fa-twitter"
+                    style="color: #51ff00;"></i></a>
+            <a class="redes" href="https://www.twitch.tv/fedowskrr" target="_blank"><i class="fa-brands fa-twitch"
+                    style="color: #51ff00;"></i></a>
+            <a class="redes" href="https://www.tiktok.com/@fede_baraibar" target="_blank"><i class="fa-brands fa-tiktok"
+                    style="color: #51ff00;"></i></a>
+        </div>
     </footer>
 
 
