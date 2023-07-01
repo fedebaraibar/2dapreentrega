@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Encode+Sans+SC:wght@300&family=Jost:wght@300&family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Mono&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
 
 body {
     background-color: black;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(3, 255, 3);
+}
+
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 .bodyIndex header {
@@ -267,80 +275,55 @@ h3 {
 
 
 /* PESTAÑA PRODUCTOS */
-
-.tituloProd2 {
-    background-color: #3bfe00;
-    text-align: left;
-    color: black;
-    margin: 10px;
+.navbar {
+    background-color: #359d15;
+    padding-left: 20px;
 }
 
-.enlacesProd {
-    background-color: #3bfe00;
-    color: black;
-    margin: 10px;
-    font-weight: bold;
+.nav-link {
+    color: #000;
+    padding: 20px;
 }
 
-.productos {
-    background-color: #3bfe00;
+.nav-link:hover {
+    color: #000;
 }
 
-.tituloProd3 {
-    color: #3bfe00;
+.tituloProd {
     text-align: center;
     text-decoration: underline;
-    font-size: 30px;
+    text-transform: bol;
 }
 
-.tecladoProd {
-    height: 500px;
-    width: auto;
-    text-align: center;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ramProd {
-    height: 450px;
-    width: auto;
-    text-align: center;
-    margin-top: 50px;
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    list-style: none;
 }
 
-.gabineteProd {
-    height: 500px;
-    width: auto;
-    text-align: center;
-    margin-top: 80px;
+.photo-gallery h5 {
+    padding-top: 5px;
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
 }
 
-.motherProd {
-    height: 550px;
-    width: auto;
-    text-align: center;
-    margin-top: 90px;
+.photo-gallery h6 {
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 400px;
 }
 
 /* PESTAÑA NOSOTROS */
-
-.tituloNos {
-    background-color: #3bfe00;
-    text-align: left;
-    color: black;
-    margin: 10px;
-}
-
-.enlacesNos {
-    background-color: #3bfe00;
-    color: black;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.nosotros {
-    background-color: #3bfe00;
-}
-
-.fondoNos {
-    height: 1200px;
-    width: 1600px;
-}
