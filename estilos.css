@@ -221,59 +221,6 @@ h3 {
     min-height: 250px;
 }
 
-/*  PESTAÑA SERVICIOS */
-
-.tituloSer {
-    text-align: left;
-    background-color: #3bfe00;
-    color: black;
-    margin: 10px;
-}
-
-.enlacesSer {
-    background-color: #3bfe00;
-    color: black;
-    margin: 10px;
-    font-weight: bold;
-}
-
-.servicios {
-    background-color: #3bfe00;
-}
-
-.titulopc {
-    text-align: center;
-    font-size: 30px;
-}
-
-.imagenPc {
-    height: 600px;
-    width: 850px;
-}
-
-.arreglandopc {
-    width: auto;
-    text-align: center;
-}
-
-.titulocel {
-    text-align: center;
-    font-size: 30px;
-}
-
-.arreglandoCel {
-    height: 600px;
-    width: auto;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.garan {
-    font-size: 10px;
-    font-weight: bold;
-}
-
-
 /* PESTAÑA PRODUCTOS */
 .navbar {
     background-color: #359d15;
@@ -326,4 +273,4 @@ h3 {
     height: 400px;
 }
 
-/* PESTAÑA NOSOTROS */
+
