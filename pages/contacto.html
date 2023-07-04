@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,80 +12,114 @@
     <link rel="stylesheet" href="../estilos.css">
     <title>TechnoHouse</title>
 </head>
-    <body class="bodyPages">
-        <header>
-            <nav class="navbar navbar-expand-md">
-                <!-- Brand -->
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../multimedia/tarjeta-grafica.png" alt="Logo" style="width:80px;">
-                </a>
-    
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+
+<body class="bodyPages">
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../multimedia/tarjeta-grafica.png" alt="Logo" style="width:80px;">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <h3 class="tituloMap">¿Donde estamos?</h3>
     <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340473979!2d-58.515699519976735!3d-34.615654768131485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1685137479710!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa" ></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45340473979!2d-58.515699519976735!3d-34.615654768131485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1685137479710!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
     </div>
     <div class="telefono">
         <h4>Florida 111,CABA</h4>
         <p> Telefono: 11 3252-6352222</p>
-        
+
     </div>
     <h3>Para contactarte con nosotros via online llenar con tus datos</h3>
     <div>
-        <form action="">
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="name" class="form-control" placeholder="Escribe tu nombre" id="name">
+            </div>
+            <!-- <form action="">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" placeholder="escrbe tu nombre aqui "> <br>
             <label for="apellido">Apellido</label>
             <input type="text" id="apellio" name="apellido" placeholder="escribe tu apellido aqui"> <br>
-            <label for="">Ingresa tu Email</label>
-            <input type="email"><br>
+            <form action="/action_page.php"> -->
+            <div class="form-group">
+                <label for="email">Ingresar email</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email">
+            </div>
             <label for="">Numero de telefono +54</label>
-            <input type="number" name="" id=""><br>
-            <label for="" class="consultas">Consultas</label><br>
-            <textarea name="" id="" cols="70" rows="20" class="textarea"></textarea><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+            <input type="text" class="form-control form-control-sm form-control-md">
+            <div class="form-group">
+                <label for="comment">CONSULTAS:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <button type="button" class="btn btn-success">Enviar</button>
+            <button type="button" class="btn btn-success">Borrar</button>
         </form>
     </div>
+    <footer>
+        <div class="footer">
+            <h3 class="copyfooter">Todos los derecehos reservados</h3>
+            <i class="fa-regular fa-copyright" style="color: #66ff00;"></i>
+        </div>
+
+        <div class="redes">
+
+            <a class="redes" href="https://www.instagram.com/fedebaraibar_/?next=%2F" target="_blank"><i
+                    class="fa-brands fa-instagram" style="color: #51ff00;"></i></a>
+            <a class="redes" href="https://twitter.com/fedebaraibarr" target="_blank"><i class="fa-brands fa-twitter"
+                    style="color: #51ff00;"></i></a>
+            <a class="redes" href="https://www.twitch.tv/fedowskrr" target="_blank"><i class="fa-brands fa-twitch"
+                    style="color: #51ff00;"></i></a>
+            <a class="redes" href="https://www.tiktok.com/@fede_baraibar" target="_blank"><i class="fa-brands fa-tiktok"
+                    style="color: #51ff00;"></i></a>
+        </div>
+    </footer>
+
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
-</script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

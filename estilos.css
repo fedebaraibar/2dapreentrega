@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Mono&display=swap');
-/* font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Jost:wght@300&family=Martian+Mono:wght@300&family=Orbitron:wght@400;500&family=Space+Mono&display=swap');
 
-*{
+/* font-family: 'Cabin', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Space Mono', monospace; */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,14 +14,9 @@ font-family: 'Roboto Mono', monospace; */
 
 body {
     background-color: black;
-    font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(3, 255, 3);
 }
 
-html,
-body {
-    scroll-behavior: smooth;
-}
 
 .bodyIndex header {
     display: flex;
@@ -28,6 +27,10 @@ body {
     height: 1000px;
 }
 
+.bodyPages header {
+    height: 50px;
+}
+
 /* INICIO */
 
 /* HEADER */
@@ -36,13 +39,15 @@ body {
     position: absolute;
     width: 100%;
     height: 1000px;
-    background-image: url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/ropa/valen13.jpeg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+            rgba(0, 0, 0, 0.5)), url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     filter: brightness(25%);
     z-index: -1;
 }
+
+
 
 .sectionHeader {
     display: flex;
@@ -70,6 +75,47 @@ body {
     transition: 0.5s;
 }
 
+@media only screen and (max-width:1024px) {
+    .backgroundImage {
+        position: absolute;
+        width: 150%;
+        height: 1400px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+                rgba(0, 0, 0, 0.5)), url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
+        background-size: cover;
+        background-position: center;
+        filter: brightness(25%);
+        z-index: -1;
+    }
+
+    .tituloInicio {
+        text-align: center;
+        text-decoration: underline;
+        color: #359d15;
+        font-size: 35px;
+        padding-bottom: 120px;
+    }
+
+    .links {
+        display: block;
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width:1120px) {
+    .links {
+        font-size: 10px;
+        color: #359d15;
+        font-size: 185%;
+        font-weight: normal;
+        text-decoration: none;
+        margin-left: 35px;
+        margin-right: 35px;
+        transition: 0.5s;
+    }
+}
+
 .links:hover {
     color: #000;
     text-decoration: none;
@@ -83,16 +129,13 @@ body {
 
 .carousel-item {
     text-align: center;
+    object-fit: cover;
 }
 
 h3 {
     font-size: 25;
     text-decoration: underline;
 }
-
-
-
-
 
 /* MAIN */
 .ofrecemos {
@@ -122,21 +165,37 @@ h3 {
     margin-top: 70px;
 }
 
+@media only screen and (max-width:1024px) {
+    .ofrecemos {
+        display: block;
+
+    }
+
+    .imgofre {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+
+    .tituloLista {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .lista {
+        display: block;
+        text-align: center;
+        margin-bottom: 2000px;
+    }
+}
+
 .btn {
-    font-size: 15px;
+    s font-size: 15px;
     color: #000;
-    margin-top: 220px;
     transition: 0.5s;
 }
 
 .imgRep {
-    background-image: url(./multimedia/blaz-erzetic-g5f0BJq-FRs-unsplash.jpg);
-    border: 2px solid #000;
-    height: 500px;
-    width: 800px;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
     filter: brightness(70%);
     z-index: -1;
     margin-left: 360px;
@@ -144,17 +203,56 @@ h3 {
 
 
 .imgProd {
-    background-image: url(./multimedia/christian-wiediger-kf_korybd1g-unsplash.jpg);
     border: 2px solid #000;
-    height: 500px;
+    height: 700px;
     width: 800px;
     background-position: center;
     background-size: cover;
     text-align: center;
     filter: brightness(60%);
     z-index: -1;
-    margin-left: 360px;
+    margin-left: 300px;
 }
+
+@media only screen and (max-width:1024px) {
+    .mostar {
+        display: block;
+    }
+
+    .tituloRep {
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .imgRep {
+        height: auto;
+        filter: brightness(70%);
+        z-index: -1;
+        margin-left: 250px;
+    }
+
+    .tituloProds {
+        text-align: center;
+    }
+
+    .imgProd {
+        border: 2px solid #000;
+        height: 700px;
+        width: 800px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        filter: brightness(60%);
+        z-index: -1;
+        margin-left: 150px;
+    }
+}
+
+
 
 
 
@@ -181,6 +279,121 @@ h3 {
 }
 
 
+@media only screen and (max-width:1024px) {
+    .copyfooter {
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+/* PESTAÑA PRODUCTOS */
+.navbar {
+    background-color: #359d15;
+    padding-left: 20px;
+}
+
+.nav-link {
+    color: #000;
+    padding: 20px;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+
+.tituloProd {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+    object-fit: cover;
+}
+
+.photo-gallery h5 {
+    padding-top: 5px;
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+}
+
+.photo-gallery h6 {
+    font-size: small;
+    font-weight: bold;
+    text-align: start;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 400px;
+}
+
+@media only screen and (max-width:1024px) {
+    .tituloProd {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: bold;
+        font-size: 35px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        list-style: none;
+        object-fit: cover;
+    }
+
+    .photo-gallery h5 {
+        padding-top: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .photo-gallery h6 {
+        font-size: small;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .copyfooter {
+        text-align: center;
+    }
+
+    .tituloSer {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: bold;
+        font-size: 35px;
+    }
+}
+
+/* PESTAÑAS SERVICIOS */
+.tituloSer {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 60px;
+}
+
 /* PESTAÑA DE CONTACTO */
 
 .tituloCon {
@@ -205,10 +418,12 @@ h3 {
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
+    padding-top: 55px;
 }
 
 .mapa {
     text-align: center;
+    margin-top: 20px;
 }
 
 .telefono {
@@ -226,56 +441,9 @@ h3 {
     min-height: 250px;
 }
 
-/* PESTAÑA PRODUCTOS */
-.navbar {
-    background-color: #359d15;
-    padding-left: 20px;
+
+@media only screen and (max-width:1024px) {
+    .tituloNos {
+        text-align: center;
+    }
 }
-
-.nav-link {
-    color: #000;
-    padding: 20px;
-}
-
-.nav-link:hover {
-    color: #000;
-}
-
-.tituloProd {
-    text-align: center;
-    text-decoration: underline;
-    text-transform: bol;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    list-style: none;
-}
-
-.photo-gallery h5 {
-    padding-top: 5px;
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-}
-
-.photo-gallery h6 {
-    font-size: small;
-    font-weight: bold;
-    text-align: start;
-}
-
-.photo-gallery img {
-    width: 100%;
-    height: 400px;
-}
-
-
