@@ -39,8 +39,8 @@ body {
     position: absolute;
     width: 100%;
     height: 1000px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
-            rgba(0, 0, 0, 0.5)), url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
+    background-image: linear-gradient(rgba(251, 6, 243, 0.461),
+            rgba(33, 29, 29, 0.5)), url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     filter: brightness(25%);
@@ -126,6 +126,9 @@ body {
     font-size: 30px;
     padding-bottom: 40px;
 }
+.carousel-inner{
+    object-fit: cover;
+}
 
 .carousel-item {
     text-align: center;
@@ -167,45 +170,51 @@ h3 {
 
 @media only screen and (max-width:1024px) {
     .ofrecemos {
-        display: block;
-
-    }
-
-    .imgofre {
         width: 100%;
-        height: 300px;
+        height: 500px;
+        background-color: #000;
+        display: grid;
+        grid-column:  1fr;
+        grid-row:  1fr;
+    }
+    
+    .imgofre {
+        border: 2px solid #000;
+        margin-top: 30px;
+    }
+    
+    .lista {
+        font-size: 25px;
         text-align: center;
     }
-
+    
     .tituloLista {
         text-align: center;
         margin-top: 70px;
     }
 
-    .lista {
-        display: block;
-        text-align: center;
-        margin-bottom: 2000px;
-    }
+
 }
 
 .btn {
-    s font-size: 15px;
+    font-size: 15px;
     color: #000;
     transition: 0.5s;
+    margin:;
 }
 
 .imgRep {
+    height: 300px;
+    color: #000;
     filter: brightness(70%);
-    z-index: -1;
-    margin-left: 360px;
+    z-index: -1s;
 }
 
-
+.tituloProds{
+    margin-top: 150px;
+}
 .imgProd {
     border: 2px solid #000;
-    height: 700px;
-    width: 800px;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -241,8 +250,7 @@ h3 {
 
     .imgProd {
         border: 2px solid #000;
-        height: 700px;
-        width: 800px;
+
         background-position: center;
         background-size: cover;
         text-align: center;
