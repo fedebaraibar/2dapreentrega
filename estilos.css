@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Jost:wght@300&family=Martian+Mono:wght@300&family=Orbitron:wght@400;500&family=Space+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Gruppo&family=Jost:wght@300&family=Martian+Mono:wght@300&family=Merriweather+Sans:wght@300&family=Orbitron:wght@400;500&family=Sen&family=Space+Mono&display=swap');
 /* font-family: 'Cabin', sans-serif;
 font-family: 'Jost', sans-serif;
 font-family: 'Martian Mono', monospace;
@@ -15,6 +14,7 @@ font-family: 'Space Mono', monospace; */
 body {
     background-color: black;
     color: rgb(3, 255, 3);
+    font-family: 'Gruppo', sans-serif;
 }
 
 
@@ -80,7 +80,7 @@ body {
         position: absolute;
         width: 150%;
         height: 1400px;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+        background-image: linear-gradient(rgba(255, 157, 11, 0.533),
                 rgba(0, 0, 0, 0.5)), url(./multimedia/jack-b-B10AxHKLvnQ-unsplash\ \(1\).jpg);
         background-size: cover;
         background-position: center;
@@ -141,52 +141,63 @@ h3 {
 }
 
 /* MAIN */
+
+/* ofrecemos-inicio */
 .ofrecemos {
     width: 100%;
     height: 500px;
     background-color: #000;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
 }
 
 .imgofre {
+    height: 200px;
     border: 2px solid #000;
-    grid-column: 1/3;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .lista {
-    font-size: 25px;
+    font-size: 30px;
     text-align: left;
-    grid-column: 3/4;
-    grid-row: 1/4;
 }
 
 .tituloLista {
-    text-align: center;
     margin-top: 70px;
+    font-size: 45px;
 }
 
-@media only screen and (max-width:528px) {
-    
-
+@media only screen and (max-width:1024px){
+    .lista {
+        font-size: 20px;
+        text-align: left;
+    }
+    .tituloLista {
+        margin-top: 70px;
+        font-size: 30px;
+        text-align: center;
+    }
 }
+/* ofrecemos- fin */
 
+/* ir a otras pestañas */
 
-
-
-.btn {
-    font-size: 15px;
-    color: #000;
-    transition: 0.5s;
+.tituloRep{
+    margin-top: 150px;
 }
-
+p{
+    font-size: 20px;
+}
 .imgRep {
     height: 300px;
     color: #000;
     filter: brightness(70%);
     z-index: -1s;
+}
+.btn1 {
+    font-size: 15px;
+    color: #000;
+    transition: 0.5s;
+    margin-left: 450px;
 }
 
 .tituloProds{
@@ -201,6 +212,11 @@ h3 {
     z-index: -1;
     margin-left: 300px;
 }
+.btn2{
+    font-size: 15px;
+    color: #000;
+    transition: 0.5s;
+}
 
 @media only screen and (max-width:1024px) {
     .mostar {
@@ -209,7 +225,7 @@ h3 {
 
     .tituloRep {
         text-align: center;
-        margin-top: 200px;
+        margin-top: 20px;
     }
 
     p {
@@ -229,7 +245,6 @@ h3 {
 
     .imgProd {
         border: 2px solid #000;
-
         background-position: center;
         background-size: cover;
         text-align: center;
@@ -237,7 +252,38 @@ h3 {
         z-index: -1;
         margin-left: 150px;
     }
+    .btn1 {
+        font-size: 15px;
+        color: #000;
+        transition: 0.5s;
+        margin-left: 250px;
+    }
 }
+@media only screen and (max-width:760px){
+    .btn1 {
+        font-size: 15px;
+        color: #000;
+        transition: 0.5s;
+        margin-left: 180px;
+    }
+}
+@media only screen and (min-width:1025px){
+    .btn1 {
+        font-size: 15px;
+        color: #000;
+        transition: 0.5s;
+        margin-left: 250px;
+    }
+}
+@media only screen and (min-width:1110px){
+    .btn1 {
+        font-size: 15px;
+        color: #000;
+        transition: 0.5s;
+        margin-left: 425px;
+    }
+}
+
 
 
 
@@ -277,17 +323,13 @@ h3 {
 .navbar {
     background-color: #359d15;
     padding-left: 20px;
+    color: #000; 
 }
 
 .nav-link {
-    color: #000;
+    color: #000 !important;
     padding: 20px;
 }
-
-.nav-link:hover {
-    color: #000;
-}
-
 
 .tituloProd {
     text-align: center;
