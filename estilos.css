@@ -247,7 +247,7 @@ p {
     font-size: 15px;
     color: #000;
     transition: 0.5s;
-    margin-left: 250px;
+    margin-left: 220px;
   }
 }
 @media only screen and (min-width: 1110px) {
@@ -255,7 +255,7 @@ p {
     font-size: 15px;
     color: #000;
     transition: 0.5s;
-    margin-left: 425px;
+    margin-left: 300px;
   }
 }
 .footer {
@@ -318,11 +318,12 @@ p {
   list-style: none;
   -o-object-fit: cover;
      object-fit: cover;
+  padding-top: 70px;
 }
 
 .photo-gallery h5 {
   padding-top: 5px;
-  font-size: small;
+  font-size: 15px;
   font-weight: bold;
   text-align: start;
 }
