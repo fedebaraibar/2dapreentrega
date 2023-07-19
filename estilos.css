@@ -158,10 +158,12 @@ h3 {
 }
 .tituloRep {
   margin-top: 150px;
+  padding-left: 15px;
 }
 
 p {
   font-size: 20px;
+  padding-left: 15px;
 }
 
 .imgRep {
@@ -172,7 +174,7 @@ p {
 }
 
 .btn1 {
-  font-size: 15px;
+  font-size: 20px;
   color: #000;
   transition: 0.5s;
   margin-left: 450px;
@@ -180,6 +182,7 @@ p {
 
 .tituloProds {
   margin-top: 150px;
+  padding-left: 15px;
 }
 
 .imgProd {
@@ -380,6 +383,10 @@ p {
     font-size: 35px;
   }
 }
+h3 {
+  padding-left: 15px;
+}
+
 .tituloSer {
   text-align: center;
   text-decoration: underline;
@@ -424,9 +431,14 @@ p {
   padding-top: 20px;
 }
 
+label {
+  padding-left: 12px;
+}
+
 .consultas {
   text-decoration: underline;
   font-size: 25px;
+  padding-left: 15px;
 }
 
 .textarea {
