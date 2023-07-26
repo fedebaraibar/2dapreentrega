@@ -432,7 +432,8 @@ h3 {
 }
 
 label {
-  padding-left: 12px;
+  padding-left: 20px;
+  margin: 10px;
 }
 
 .consultas {
@@ -441,10 +442,13 @@ label {
   padding-left: 15px;
 }
 
-.textarea {
-  min-width: 490px;
-  max-width: 490px;
+textarea {
+  width: auto;
   min-height: 250px;
+}
+
+button {
+  margin: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
